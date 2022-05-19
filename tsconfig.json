@@ -1,0 +1,47 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "Node 16",
+
+	"compilerOptions": {
+		"lib": ["es2021", "esnext.asynciterable"],
+		"module": "commonjs",
+		"target": "es2021",
+		"outDir": "dist",
+		"rootDir": ".",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		// "strict": true, // Express Methods Needs Modulation to Enable Strict
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
+	}
+}
+
+// {
+// 	"compilerOptions": {
+// 		"module": "commonjs",
+// 		"esModuleInterop": true,
+// 		"target": "es6",
+// 		"moduleResolution": "node",
+// 		"sourceMap": true,
+// 		"outDir": "dist"
+// 	},
+// 	"lib": ["es2015"]
+// }
+
+// {
+// 	"compilerOptions": {
+// 		"module": "commonjs",
+// 		"esModuleInterop": true,
+// 		"target": "es6",
+// 		"noImplicitAny": true,
+// 		"moduleResolution": "node",
+// 		"sourceMap": true,
+// 		"outDir": "dist",
+// 		"baseUrl": ".",
+// 		"paths": {
+// 			"*": ["node_modules/*"]
+// 		}
+// 	},
+// 	"include": ["./**/*"]
+// }

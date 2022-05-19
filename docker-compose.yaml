@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  db:
+    # For local development
+    image: postgres:13
+    container_name: perntodo
+    ports:
+      - 5107:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: perntodo
+  auth:
+    # For local development
+    image: postgres:13
+    container_name: perntodo-auth
+    ports:
+      - 5108:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: perntodo-auth
